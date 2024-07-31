@@ -3,7 +3,7 @@ import PageObjectModel from '../pages/PageObjectModel';
 
 let page: Page;
 
-test.describe('Integrat Website Test Cases', () => {
+test.describe('Integra Website Test Cases', () => {
 
    test.beforeEach(async ({ page }) => {
     await page.goto('/');
