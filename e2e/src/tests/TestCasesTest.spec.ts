@@ -3,7 +3,7 @@ import PageObjectModel from '../pages/PageObjectModel';
 
 let page: Page;
 
-test.describe('My First Test Case', () => {
+test.describe('Integrat Website Test Cases', () => {
 
    test.beforeEach(async ({ page }) => {
     await page.goto('/');
@@ -18,7 +18,7 @@ test.describe('My First Test Case', () => {
     await expect(pageObjectModel.integraLogo).toBeVisible();
   });
 
-  test('Given user accesses the webpage, then Careers button is visible', async ({ page }) => {
+  test('Given user accesses the webpage, then Careers button is visible and enabled', async ({ page }) => {
     const pageObjectModel = new PageObjectModel(page)
     await expect(pageObjectModel.careersButton).toBeVisible();
     await expect(pageObjectModel.careersButton).toBeEnabled();
